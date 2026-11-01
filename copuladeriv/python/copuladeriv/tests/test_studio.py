@@ -18,7 +18,6 @@ The existing package tests are NOT modified or weakened by this file.
 """
 
 import importlib.util
-import json
 import math
 import os
 import sys

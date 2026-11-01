@@ -16,9 +16,9 @@ from __future__ import annotations
 import numpy as np
 from scipy import stats as scipy_stats
 
-from .payoffs import best_of_call, worst_of_put, european_call
+from .payoffs import best_of_call, worst_of_put
 from .statistics import price_se_ci, sample_std
-from .copulas import gaussian_copula_sample, student_t_copula_sample, empirical_correlation
+
 
 
 # ---------------------------------------------------------------------------

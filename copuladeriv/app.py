@@ -18,7 +18,7 @@ import sys
 
 import numpy as np
 import pandas as pd
-import plotly.express as px
+# plotly.express unused (only graph_objects used) — kept for parity, linted out
 import plotly.graph_objects as go
 import streamlit as st
 
