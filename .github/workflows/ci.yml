@@ -36,12 +36,8 @@ jobs:
         run: |
           python -c "import ast; ast.parse(open('copuladeriv/app.py', encoding='utf-8').read()); print('app.py parses OK')"
 
-  # C++20 engine build: requires native g++ / make / cmake (present on
-  # ubuntu-latest GitHub Actions runners, but not on this Windows host).
-  # Disabling until the runner result confirms the toolchain path works.
   cpp-build:
     runs-on: ubuntu-latest
-    if: false
     steps:
       - uses: actions/checkout@v4
       - name: Install build tools
