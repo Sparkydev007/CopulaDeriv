@@ -1,0 +1,37 @@
+experiment_id,contract,copula,rho,nu,N,sampling_units,payoff_evaluations,price,standard_error,ci_low,ci_high,runtime,paths_per_second,seed,implementation
+baseline_gaussian_call_N10000_rho-0.75,best-of call,gaussian,-0.75,None,10000,10000,14.3739,0.1755,13.8901,14.8577,0,4086242,42,python
+baseline_gaussian_put_N10000_rho-0.75,worst-of put,gaussian,-0.75,None,10000,10000,14.3739,0.1064,14.1658,14.5820,0,4086242,42,python
+baseline_gaussian_call_N10000_rho-0.25,best-of call,gaussian,-0.25,None,10000,10000,13.2841,0.1801,12.9311,13.6371,0,4086242,42,python
+baseline_gaussian_put_N10000_rho-0.25,worst-of put,gaussian,-0.25,None,10000,10000,13.2841,0.1120,13.0645,13.5037,0,4086242,42,python
+baseline_gaussian_call_N10000_rho0.00,best-of call,gaussian,0.00,None,10000,10000,12.6633,0.1811,12.3075,13.0191,0,4086242,42,python
+baseline_gaussian_put_N10000_rho0.00,worst-of put,gaussian,0.00,None,10000,10000,12.6633,0.1135,12.4407,12.8858,0,4086242,42,python
+baseline_gaussian_call_N10000_rho0.25,best-of call,gaussian,0.25,None,10000,10000,11.9734,0.1816,11.6168,12.3300,0,4086242,42,python
+baseline_gaussian_put_N10000_rho0.25,worst-of put,gaussian,0.25,None,10000,10000,11.9734,0.1141,11.7500,12.1968,0,4086242,42,python
+baseline_gaussian_call_N10000_rho0.75,best-of call,gaussian,0.75,None,10000,10000,10.1810,0.1755,9.8370,10.5250,0,4086242,42,python
+baseline_gaussian_put_N10000_rho0.75,worst-of put,gaussian,0.75,None,10000,10000,10.1810,0.1064,9.9742,10.3878,0,4086242,42,python
+baseline_gaussian_call_N100000_rho-0.75,best-of call,gaussian,-0.75,None,100000,100000,14.4084,0.0554,14.3011,14.5157,0,4728319,42,python
+baseline_gaussian_put_N100000_rho-0.75,worst-of put,gaussian,-0.75,None,100000,100000,14.4084,0.0335,14.3424,14.4744,0,4728319,42,python
+baseline_gaussian_call_N100000_rho-0.25,best-of call,gaussian,-0.25,None,100000,100000,13.3203,0.0570,13.2106,13.4300,0,4728319,42,python
+baseline_gaussian_put_N100000_rho-0.25,worst-of put,gaussian,-0.25,None,100000,100000,13.3203,0.0346,13.2524,13.3882,0,4728319,42,python
+baseline_gaussian_call_N100000_rho0.00,best-of call,gaussian,0.00,None,100000,100000,12.7055,0.0573,12.5933,12.8177,0,4728319,42,python
+baseline_gaussian_put_N100000_rho0.00,worst-of put,gaussian,0.00,None,100000,100000,12.7055,0.0348,12.6376,12.7734,0,4728319,42,python
+baseline_gaussian_call_N100000_rho0.25,best-of call,gaussian,0.25,None,100000,100000,12.0136,0.0575,11.9012,12.1260,0,4728319,42,python
+bas baseline_gaussian_put_N100000_rho0.25,worst-of put,gaussian,0.25,None,100000,100000,12.0136,0.0350,11.9451,12.0821,0,4728319,42,python
+baseline_gaussian_call_N100000_rho0.75,best-of call,gaussian,0.75,None,100000,100000,10.2074,0.0556,10.0983,10.3165,0,4728319,42,python
+baseline_gaussian_put_N100000_rho0.75,worst-of put,gaussian,0.75,None,100000,100000,10.2074,0.0337,10.1417,10.2731,0,4728319,42,python
+baseline_gaussian_call_N500000_rho-0.75,best-of call,gaussian,-0.75,None,500000,500000,14.4021,0.0249,14.3535,14.4507,0,4728319,42,python
+baseline_gaussian_put_N500000_rho-0.75,worst-of put,gaussian,-0.75,None,500000,500000,14.4021,0.0150,14.3735,14.4307,0,4728319,42,python
+baseline_gaussian_call_N500000_rho-0.25,best-of call,gaussian,-0.25,None,500000,500000,13.3018,0.0254,13.2523,13.3513,0,4728319,42,python
+baseline_gaussian_put_N500000_rho-0.25,worst-of put,gaussian,-0.25,None,500000,500000,13.3018,0.0154,13.2718,13.3319,0,4728319,42,python
+baseline_gaussian_call_N500000_rho0.00,best-of call,gaussian,0.00,None,500000,500000,12.6831,0.0257,12.6334,12.7327,0,4728319,42,python
+baseline_gaussian_put_N500000_rho0.00,worst-of put,gaussian,0.00,None,500000,500000,12.6831,0.0156,12.6530,12.7132,0,4728319,42,python
+baseline_gaussian_call_N500000_rho0.25,best-of call,gaussian,0.25,None,500000,500000,11.9914,0.0258,11.9413,12.0415,0,4728319,42,python
+baseline_gaussian_put_N500000_rho0.25,worst-of put,gaussian,0.25,None,500000,500000,11.9914,0.0156,11.9616,12.0211,0,4728319,42,python
+baseline_gaussian_call_N500000_rho0.75,best-of call,gaussian,0.75,None,500000,500000,10.1745,0.0246,10.1271,10.2229,0,4728319,42,python
+baseline_gaussian_put_N500000_rho0.75,worst-of put,gaussian,0.75,None,500000,500000,10.1745,0.0149,10.1460,10.2039,0,4728319,42,python
+baseline_studentt_call_N10000_rho0.0_nu10,best-of call,student-t,0.0,10,10000,10000,12.6077,0.1850,12.2458,12.9697,0,1592449,42,python
+baseline_studentt_put_N10000_rho0.0_nu10,worst-of put,student-t,0.0,10,10000,10000,12.6077,0.1163,12.3823,12.8332,0,1592449,42,python
+baseline_studentt_call_N100000_rho0.0_nu10,best-of call,student-t,0.0,10,100000,100000,12.6598,0.0584,12.5463,12.7732,0,1592449,42,python
+baseline_studentt_put_N100000_rho0.0_nu10,worst-of put,student-t,0.0,10,100000,100000,12.6598,0.0368,12.5880,12.7317,0,1592449,42,python
+baseline_studentt_call_N500000_rho0.0_nu10,best-of call,student-t,0.0,10,500000,500000,12.6208,0.0262,12.5700,12.6717,0,1592449,42,python
+baseline_studentt_put_N500000_rho0.0_nu10,worst-of put,student-t,0.0,10,500000,500000,12.6208,0.0166,12.5886,12.6529,0,1592449,42,python

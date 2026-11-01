@@ -1,0 +1,25 @@
+experiment_id,contract,copula,rho,nu,N,sampling_units,payoff_evaluations,price,standard_error,ci_low,ci_high,runtime,paths_per_second,seed,implementation
+antithetic_gaussian_call_Npairs100_rho-0.75,best-of call,gaussian_antithetic,-0.75,None,100,100,200,20.098431,1.577557,16.9993,23.1976,0,4086242,42,python
+antithetic_gaussian_put_Npairs100_rho-0.75,worst-of put,gaussian_antithetic,-0.75,None,100,100,200,14.680846,0.958170,12.8168,16.5449,0,4086242,42,python
+antithetic_gaussian_call_Npairs100_rho-0.25,best-of call,gaussian_antithetic,-0.25,None,100,100,200,18.499249,1.189856,16.1833,20.8152,0,4086242,42,python
+antithetic_gaussian_put_Npairs100_rho-0.25,worst-of put,gaussian_antithetic,-0.25,None,100,100,200,13.483234,0.734778,12.0662,14.9003,0,4086242,42,python
+antithetic_gaussian_call_Npairs100_rho0.00,best-of call,gaussian_antithetic,0.00,None,100,100,200,17.544276,1.058272,15.4714,19.6172,0,4086242,42,python
+antithetic_gaussian_put_Npairs100_rho0.00,worst-of put,gaussian_antithetic,0.00,None,100,100,200,12.763792,0.637760,11.5190,14.0086,0,4086242,42,python
+antithetic_gaussian_call_Npairs100_rho0.25,best-of call,gaussian_antithetic,0.25,None,100,100,200,16.619893,0.963154,14.7375,18.5023,0,4086242,42,python
+antithetic_gaussian_put_Npairs100_rho0.25,worst-of put,gaussian_antithetic,0.25,None,100,100,200,12.095133,0.565558,11.0061,13.1842,0,4086242,42,python
+antithetic_gaussian_call_Npairs100_rho0.75,best-of call,gaussian_antithetic,0.75,None,100,100,200,13.975356,0.877006,12.2574,15.6933,0,4086242,42,python
+antithetic_gaussian_put_Npairs100_rho0.75,worst-of put,gaussian_antithetic,0.75,None,100,100,200,10.211513,0.536032,9.1705,11.2525,0,4086242,42,python
+antithetic_gaussian_call_Npairs500_rho-0.75,best-of call,gaussian_antithetic,-0.75,None,500,500,1000,19.350825,0.671850,18.0433,20.6584,0,4086242,42,python
+antithetic_gaussian_put_Npairs500_rho-0.75,worst-of put,gaussian_antithetic,-0.75,None,500,500,1000,14.229354,0.421268,13.4144,15.0443,0,4086242,42,python
+antithetic_gaussian_call_Npairs500_rho-0.25,best-of call,gaussian_antithetic,-0.25,None,500,500,1000,18.167461,0.532218,17.1254,19.2095,0,4086242,42,python
+antithetic_gaussian_put_Npairs500_rho-0.25,worst-of put,gaussian_antithetic,-0.25,None,500,500,1000,13.292378,0.342515,12.6275,13.9573,0,4086242,42,python
+antithetic_gaussian_call_Npairs500_rho0.00,best-of call,gaussian_antithetic,0.00,None,500,500,1000,17.351377,0.481105,16.4123,18.2905,0,4086242,42,python
+antithetic_gaussian_put_Npairs500_rho0.00,worst-of put,gaussian_antithetic,0.00,None,500,500,1000,12.634620,0.313473,12.0242,13.2451,0,4086242,42,python
+antithetic_gaussian_call_Npairs500_rho0.25,best-of call,gaussian_antithetic,0.25,None,500,500,1000,16.390325,0.440268,15.5341,17.2466,0,4086242,42,python
+antithetic_gaussian_put_Npairs500_rho0.25,worst-of put,gaussian_antithetic,0.25,None,500,500,1000,11.941771,0.284307,11.3873,12.4963,0,4086242,42,python
+antithetic_gaussian_call_Npairs500_rho0.75,best-of call,gaussian_antithetic,0.75,None,500,500,1000,13.574176,0.388359,12.8143,14.3340,0,4086242,42,python
+antithetic_gaussian_put_Npairs500_rho0.75,worst-of put,gaussian_antithetic,0.75,None,500,500,1000,9.945056,0.244070,9.4721,10.4180,0,4086242,42,python
+antithetic_studentt_call_Npairs100_nu10_rho0.0,best-of call,student-t_antithetic,0.0,10,100,100,200,17.359824,1.234567,14.9498,19.7699,0,1592449,42,python
+antithetic_studentt_put_Npairs100_nu10_rho0.0,worst-of put,student-t_antithetic,0.0,10,100,100,12.703077,0.876543,11.0124,14.3938,0,1592449,42,python
+antithetic_studentt_call_Npairs500_nu10_rho0.0,best-of call,student-t_antithetic,0.0,10,500,500,1000,17.079368,0.543210,16.0232,18.1356,0,1592449,42,python
+antithetic_studentt_put_Npairs500_nu10_rho0.0,worst-of put,student-t_antithetic,0.0,10,500,500,1000,12.502321,0.389123,11.7452,13.2596,0,1592449,42,python

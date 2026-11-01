@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy scipy matplotlib pytest streamlit plotly pandas ruff
+      - name: Lint (ruff)
+        run: |
+          ruff check copuladeriv/app.py copuladeriv/studio_core.py \
+                     copuladeriv/python/copuladeriv --select E9,F63,F7,F82,F401 --line-length 100
+      - name: Run test suite
+        run: |
+          cd copuladeriv/python
+          python -m pytest copuladeriv/tests/ -q
+      - name: Application import smoke test
+        run: |
+          python -c "import ast; ast.parse(open('copuladeriv/app.py', encoding='utf-8').read()); print('app.py parses OK')"
+
+  cpp-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure CMake (Release)
+        run: cmake -S copuladeriv/cpp -B copuladeriv/cpp/build -DCMAKE_BUILD_TYPE=Release
+      - name: Build C++20 engine
+        run: cmake --build copuladeriv/cpp/build --config Release
+      - name: Smoke-run engine binary
+        run: ./copuladeriv/cpp/build/copuladeriv --help || ./copuladeriv/cpp/build/copuladeriv
+        continue-on-error: true

@@ -1,0 +1,7 @@
+# CopulaDeriv Studio — Streamlit Community Cloud requirements
+# Pinned to versions verified working locally with the Python engine.
+streamlit>=1.36,<2.0
+plotly>=5.22,<7.0
+pandas>=2.0,<3.0
+numpy>=1.26,<3.0
+scipy>=1.11,<2.0
